@@ -1,0 +1,11 @@
+<a [routerLink]="[episode.id]" [title]="episode.title">
+  <div class="episode">
+    <div class="title">{{ episode.title }}</div>
+    <div class="subtitle">Season {{ episode.season }} · Episode {{ episode.episode }}</div>
+    <div class="released">{{ episode.released | date:'mediumDate'}}</div>
+    <div class="guests">
+      <app-episode-guest *ngFor="let guest of episode.guests" [guest]="guest"></app-episode-guest>
+    </div>
+    <div class="description">{{ episode.description }}</div>
+  </div>
+</a>
