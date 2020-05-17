@@ -1,8 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+
 // Modules
 import { AppRoutingModule } from './app-routing.module';
+import {AngularFireModule} from '@angular/fire';
 
 import { AppComponent } from './app.component';
 
@@ -20,6 +22,9 @@ import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.com
 import { EpisodeDetailsPageComponent } from './pages/episode-details-page/episode-details-page.component';
 import { GuestListComponent } from './containers/guest-list/guest-list.component';
 
+import {environment} from '../environments/environment';
+import {AngularFirestoreModule} from '@angular/fire/firestore';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +39,9 @@ import { GuestListComponent } from './containers/guest-list/guest-list.component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

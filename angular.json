@@ -121,8 +121,13 @@
               "devServerTarget": "podcast-gdg-es:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "podcast-gdg-es"
 }

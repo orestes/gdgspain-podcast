@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "gdg-spain-podcast-2020-05"
+  },
+  "targets": {
+    "gdg-spain-podcast-2020-05": {
+      "hosting": {
+        "podcast-gdg-es": [
+          "gdg-spain-podcast-2020-05"
+        ]
+      }
+    }
   }
 }
