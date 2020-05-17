@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "deploy:web": "firebase deploy --only hosting",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
